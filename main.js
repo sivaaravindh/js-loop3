@@ -2,21 +2,62 @@
 let ch="A"
 for (let i=1; i<=num; i++){
       
-    for(let j=1; j<=i; j++){
+    for(let j=1; j<=i; j++){ 
     
         document.write(ch,64+j)
     }
     document.write("<br>")
+}
+
+let n = 5; 
+let ch = "";
+
+for (let i = 1; i <= n; i++) {
+  
+  for (let j = 0; j < i; j++) {
+    ch += String.fromCharCode(j + 65);
+  }
+  ch += "<br>";
+}
+
+document.write(ch)
+
+
+/*let n = 5; 
+let string = "";
+
+for (let i = 1; i <= n; i++) {
+
+  for (let j = 0; j < i; j++) {
+       string = (prompt("Enter the number"));
+         document.write(string++);
+  }
+   document.write("<br>")
+}
+
+let num=5;
+ 
+let ch=["A","B","C","D","F"]
+
+for (let i = 1; i <= num; i++) {
+  
+  for (let j = 0; j < i; j++) {
+
+    document.write(ch[j])
+  }
+  document.write("<br>")
 }*/
 
-let n = 5; // you can take input from prompt or change the value
-let string = "";
-// External loop
+let n = 5; 
+let ch = "";
+
 for (let i = 1; i <= n; i++) {
-  // printing characters
+  
   for (let j = 0; j < i; j++) {
-    string += String.fromCharCode(j + 65);
+    ch += String.fromCharCode(j + 65);
   }
-  string += "\n";
+  ch += "<br>";
 }
-console.log(string);
+
+document.write(ch)
+
